@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body class="form">
+   <h1 id="form-title">Agendar una visita</h1>
+   <form action="https://formspree.io/f/xqkrynkj" method="post">
+    <fieldset>
+        <legend>Tus datos</legend>
+        <label>Nombre:</label>
+        <input required type="text" name="nombre" maxlength="20" placeholder="Ingresa tu nombre">
+        <br>
+        <label>Localidad: </label>
+        <label for="cb">City Bell</label><input type="radio" name="localidad" value="city bell" id="cb">
+        <label for="ve">Villa Elisa</label><input type="radio" name="localidad"value="villa elisa" id="ve">
+        <label for="gn">Gonnet</label><input type="radio" name="localidad" value="gonnet" id="gn">
+        <br>
+        <label for="dir">Calle</label><input required type="text" maxlength="20" size="10" name="direccion" id="dir">
+        <label for="num">Número de casa</label><input required type="text" maxlength="10" size="10">
+        <br>
+        <label for="cel">Número de celular</label><input required type="tel" name="celular" id="cel" maxlength="20">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Servicio requerido</legend>
+        <input type="checkbox" name="servicio" value="completo">Servicio completo
+        <br>
+        <input type="checkbox" name="servicio" value="puesta a punto">Puesta a punto
+        <br>
+        <input type="checkbox" name="servicio" value="corte de pasto">Corte de pasto
+        <br>
+        <input type="checkbox" name="servicio" value="poda">Poda
+        <br>
+        <input type="checkbox" name="servicio" value="canterizacion">Canterizacion
+    </fieldset>
+    <input type="submit" value="Enviar">
+    <input type="reset">
+   </form>
+</body>
+</html>
